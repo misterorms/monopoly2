@@ -1,9 +1,7 @@
 class viewConsole{
-    constructor(players,cards){
-        this.players=players;
-        this.cards=cards;
+    printMap(players,cards,a,b){
+        console.log('Player 0: Money: '+players[0].getMoney()+' Position: '+players[0].getPosition());
+        console.log(`Player 1: Money: ${players[1].getMoney()} Position: ${players[1].getPosition()}`);
     }
-    printMap(){
-     console.log('Player 0: '+this.players[0].getMoney());
-    }
-}
+};
+
